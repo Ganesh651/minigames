@@ -1,10 +1,6 @@
 import { v4 as uuidv4 } from 'uuid'
 import { useNavigate } from 'react-router-dom';
 import GameOptions from '../GameOptions';
-import EmojiGameRules from '../EmojiGameRules';
-import MatrixGameRules from '../MatrixGameRules';
-import RockPaperGameRules from '../RockPaperGameRules';
-import FlipGameRules from '../FlipGameRules';
 import './index.css'
 
 
@@ -38,19 +34,37 @@ const gameTypeList = [
 const Home = () => {
   const navigate = useNavigate()
 
+  const renderEmojiGameView = () => {
+    navigate("/emoji-game")
+  }
+
+  const renderMemoryGameView = () => {
+    navigate("/memory-matrix")
+  }
+
+  const renderRockPaperView = () => {
+    navigate("/rock-paper-scissor")
+  }
+
+
+  const renderFlipGameView = () => {
+    navigate("/card-flip-memory-game")
+  }
+
 
   const handdleGameRules = (gameType) => {
+
     switch (gameType) {
       case "EMOJIGAME":
-        return <EmojiGameRules />
+        return renderEmojiGameView()
       case "MEMORY_MATRIX":
-        return <MatrixGameRules />
+        return renderMemoryGameView()
       case "ROCK_PAPER_SCISSOR":
-        return <RockPaperGameRules />
+        return renderRockPaperView()
       case "FLIP_GAME":
-        return <FlipGameRules />
-
-      default: break;
+        return renderFlipGameView()
+      default:
+        return null
     }
   }
 
