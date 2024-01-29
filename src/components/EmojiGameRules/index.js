@@ -1,14 +1,20 @@
 import React from 'react'
 import { IoIosArrowRoundBack } from "react-icons/io";
+import { useNavigate } from 'react-router-dom';
 import './index.css'
 
 const EmojiGameRules = (props) => {
   const { emojiGameStart } = props
+  const navigate = useNavigate();
+
+  const handdleBack = () => {
+    navigate("/")
+  }
 
   return (
     <div className='emoji-rules-container'>
-      <div style={{ width: "900px", margin: "auto" }}>
-        <div className='back-button-container'>
+      <div className='rules-game'>
+        <div className='back-button-container' onClick={handdleBack}>
           <IoIosArrowRoundBack style={{ height: "22px", width: "22px" }} />
           <span className='back-button'>Back</span>
         </div>

@@ -10,6 +10,7 @@ const EmojiG = () => {
     setStartGame(true)
   }
 
+
   return (
     <>
       {startGame ? <>{renderGameView()}</> : <EmojiGameRules emojiGameStart={emojiGameStart} />}

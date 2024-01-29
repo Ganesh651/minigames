@@ -1,0 +1,49 @@
+.matrix-rules-container {
+  background-color: #1A202C;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.memory-matrix-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.memory-rules-heaing {
+  color: #fff;
+}
+
+.rules-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+
+.matrix-start-button {
+  color: #fff;
+  background-color: #467AFF;
+  height: 35px;
+  width: 100px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+}
+
+.rules-list-container ul {
+  color: #E2E8F0;
+  font-family: "Bree Serif";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.matrix-memory-heading {
+  color: #FFF;
+  font-family: "Bree Serif";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

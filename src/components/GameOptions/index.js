@@ -10,7 +10,7 @@ const GameOptions = (props) => {
 
   return (
     <div className='game-theme-container' onClick={viewGameRules}>
-      <img src={imageUrl}
+      <img className='card-image' src={imageUrl}
         alt={text} />
       <h3 className='emoji-game'>{text}</h3>
     </div>
