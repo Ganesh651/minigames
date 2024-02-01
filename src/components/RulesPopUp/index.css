@@ -1,0 +1,15 @@
+.rules-button {
+  color: #334155;
+  border: 1px solid #334155;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.popup-container {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  width: 475px;
+}

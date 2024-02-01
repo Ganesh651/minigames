@@ -1,9 +1,3 @@
-.emoji-rules-container {
-  background-image: linear-gradient(180deg, #9796F0 0.41%, #FBC7D4 128.48%);
-  min-height: 100vh;
-  padding: 40px;
-}
-
 .back-button-container {
   display: flex;
   align-items: center;
@@ -37,6 +31,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
+  padding: 0 10px;
 }
 
 .start-playing-btn {
@@ -53,8 +48,9 @@ ul {
 }
 
 .rules-game {
-  width: 900px;
-  margin: auto;
+  background-image: linear-gradient(180deg, #9796F0 0.41%, #FBC7D4 128.48%);
+  min-height: 100vh;
+  padding: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -68,6 +64,6 @@ ul {
 
   .rules-game {
     width: 100%;
-    margin: 0;
+    padding: 15px;
   }
 }
